@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
+    <script src="libraries/p5.dom.min.js"></script>
+    <script src="libraries/p5.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+    <script src="libraries/p5.play.js"></script>
+
+    <!-- Font API -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Simple Organisms</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Introduction -->
+    <h1>Simple Organisms</h1>
+    <p>
+      Read the statements given below and identify the organism associated with
+      each statement. Pick the organism from the box below.
+    </p>
+
+    <!-- Choices to answer the Form -->
+    <table id="choices">
+      <tr>
+        <td>Amoeba</td>
+        <td>Hydra</td>
+        <td>Housefly</td>
+      </tr>
+      <tr>
+        <td>Butterfly</td>
+        <td>Spider</td>
+        <td>Frog</td>
+      </tr>
+    </table>
+    <br /><br /><br /><br />
+
+    <!-- The Form -->
+    <form action="">
+      <table id="answers">
+        <tr id="heading">
+          <th>Statement</th>
+          <th>Organisms</th>
+          <th>Image</th>
+        </tr>
+
+        <tr>
+          <td>Sucks up the nectar of flowers using its proboscis.</td>
+          <td><input type="text" id="a1" /></td>
+          <td><img src="images/butterfly.jpg" alt="animal 1" /></td>
+        </tr>
+
+        <tr>
+          <td>
+            Injects digestive juices into the body of the insect and then takes
+            up the digested food.
+          </td>
+          <td><input type="text" id="a2" /></td>
+          <td><img src="images/spider.jpg" alt="animal 2" /></td>
+        </tr>
+
+        <tr>
+          <td>
+            Dissolves food around it using its saliva and then takes up the
+            digested food using its feeding tube.
+          </td>
+          <td><input type="text" id="a3" /></td>
+          <td><img src="images/fly.jpeg" alt="animal 3" /></td>
+        </tr>
+
+        <tr>
+          <td>Catches insects using its tentacles.</td>
+          <td><input type="text" id="a4" /></td>
+          <td><img src="images/hydra.jpg" alt="animal 4" /></td>
+        </tr>
+
+        <tr>
+          <td>Catches insects using its long sticky tongue.</td>
+          <td><input type="text" id="a5" /></td>
+          <td><img src="images/frog.jpeg" alt="animal 5" /></td>
+        </tr>
+
+        <tr>
+          <td>Engulfs food particles using its pseudopodia.</td>
+          <td><input type="text" id="a6" /></td>
+          <td><img src="images/ameoba.jpg" alt="animal 6" /></td>
+        </tr>
+      </table>
+    </form>
+    <button id="submit">Submit</button>
+
+    <!-- Scripting to cheak the currect answers -->
+    <script src="sketch.js"></script>
+  </body>
+</html>
